@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+          -webkit-appearance: none; 
+          margin: 0; 
+        }
+        </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card bg-dark">
+                <div class="card-header  text-center">
+                  <span class="text-white h1">Calculator</span>
+                </div>
+                <div class="card-body">
+                <input type="number" id="firstNum">
+    <select name="" id="operations">
+    <option value="Add">ADD</option>
+    <option value="Subtract">SUBTRACT</option>
+    <option value="Divide">DIVIDE</option>
+    <option value="Multiply">MULTIPLY</option>
+    </select>
+    <input type="number" id="secondNum">
+    <button id="calculate" class="btn btn-success">Calculate</button>
+       <button id="clear" class="btn btn-danger">Clear</button>
+                </div>
+                <div class="card-footer bg-dark">
+                    <span class="text-white h4">Result=</span>
+                    <input type="number" id="result"><br>
+                    <span class="h3 text-white" id="Fact"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+<!-- <script>https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css</script>
+<script>https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css</script>
+<script>https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.js</script>
+<script>https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/input.min.css</script> -->
+
+</body>
+</html>
