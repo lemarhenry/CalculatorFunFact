@@ -1,3 +1,4 @@
+$('#isloading').css('display', 'none');
 document.getElementById('calculate').addEventListener('click',()=>{
  let operation =document.getElementById('operations').value;
  optFun(operation);   
@@ -74,10 +75,17 @@ Clear=()=>{
 
 }
 funFact=(Fact)=>{
+     $(document).ajaxStart(function() {
+ 	$('#isloading').css('display', 'block');
+ });
+ 
 $.get(`http://numbersapi.com/${Fact}`, data => {
     let fact =data;
     document.getElementById('Fact').innerHTML=fact;
-   
+    
 })
 
+$(document).ajaxComplete(function() {
+    $('#isloading').css('display', 'none');
+});
 }
